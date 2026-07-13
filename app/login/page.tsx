@@ -7,6 +7,7 @@ import { Suspense, useCallback, useEffect, useState } from "react";
 
 import { defaultHomeForRole } from "@/lib/rbac";
 import { Role } from "@prisma/client";
+import { t } from "@/lib/i18n";
 
 type PresetUser = {
   label: string;
@@ -66,7 +67,7 @@ function LoginContent() {
 
     const mapErrorMessage = (raw?: string | null) => {
       if (!raw) return null;
-      if (raw === "CredentialsSignin") return "Email ou mot de passe incorrect.";
+      if (raw === "CredentialsSignin") return t("login.invalidCredentials");
       return raw;
     };
     const result = await signIn("credentials", {
@@ -91,15 +92,15 @@ function LoginContent() {
     <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col items-center justify-center gap-4 px-2 pt-0 pb-4 md:px-6 md:pt-0 md:pb-6">
       <section className="panel panel-body lg-gap w-full max-w-xl border-indigo-400/25 shadow-indigo-900/30">
         <h1 className="text-3xl font-semibold text-white">
-          Connexion
+          {t("login.title")}
         </h1>
         <details className="rounded-xl border border-dashed border-amber-300/70 bg-amber-500/10 p-3 text-sm text-slate-200 shadow-inner shadow-amber-900/20">
           <summary className="flex cursor-pointer items-center justify-between text-sm font-semibold text-white">
-            Accès démo (comptes seed)
+            {t("login.demoAccess")}
             <span className="text-xs text-slate-300">▼</span>
           </summary>
           <p className="mt-3 text-slate-300 text-sm">
-            Utilisez les comptes seed pour tester les rôles et l’accès protégé.
+            {t("login.demoHint")}
           </p>
           <div className="mt-3 space-y-2 text-sm text-slate-200">
             <div className="flex flex-wrap gap-2">
@@ -131,7 +132,7 @@ function LoginContent() {
         <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
           <div>
             <label className="text-sm text-slate-200" htmlFor="email">
-              Email
+              {t("login.email")}
             </label>
             <input
               id="email"
@@ -146,7 +147,7 @@ function LoginContent() {
           </div>
           <div>
             <label className="text-sm text-slate-200" htmlFor="password">
-              Mot de passe
+              {t("login.password")}
             </label>
             <input
               id="password"
@@ -174,14 +175,14 @@ function LoginContent() {
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({ email }),
                       });
-                      setResetMessage("Email de vérification renvoyé (si le compte existe).");
+                      setResetMessage(t("login.verificationSent"));
                     } catch {
-                      setResetMessage("Email de vérification renvoyé (si le compte existe).");
+                      setResetMessage(t("login.verificationSent"));
                     }
                   }}
                   className="inline-flex items-center gap-2 rounded-full border border-cyan-400/60 bg-cyan-500/20 px-3 py-2 text-xs font-semibold text-cyan-100 transition hover:border-cyan-300 hover:bg-cyan-500/30"
                 >
-                  Renvoyer l’email de vérification
+                  {t("login.resendVerification")}
                 </button>
               )}
             </div>
@@ -193,7 +194,7 @@ function LoginContent() {
           )}
           {signupSuccess && (
             <p className="rounded-lg border border-emerald-400/40 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-100">
-              Compte créé. Vérifie ton email pour activer ton compte.
+              {t("login.signupSuccess")}
             </p>
           )}
           <button
@@ -201,7 +202,7 @@ function LoginContent() {
             disabled={loading}
             className="w-full rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 px-4 py-3 text-center text-sm font-semibold text-white shadow-lg transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70"
           >
-            {loading ? "Connexion..." : "Se connecter"}
+            {loading ? t("login.connecting") : t("common.signIn")}
           </button>
           <button
             type="button"
@@ -215,28 +216,28 @@ function LoginContent() {
                   body: JSON.stringify({ email }),
                 });
                 setResetMessage(
-                  "Si un compte existe pour cet email, un mot de passe temporaire vient d'être envoyé."
+                  t("login.temporaryPasswordSent")
                 );
               } catch {
-                setResetMessage("Si un compte existe pour cet email, un mot de passe temporaire vient d'être envoyé.");
+                setResetMessage(t("login.temporaryPasswordSent"));
               }
             }}
             className="flex w-full items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm font-semibold text-white transition hover:border-cyan-400/70 hover:bg-white/10"
           >
-            Mot de passe oublié ? Envoyer un mot de passe temporaire
+            {t("login.forgotPassword")}
           </button>
           <Link
             href="/"
             role="button"
             className="flex w-full items-center justify-center gap-2 rounded-xl bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
           >
-            ← Retour accueil
+            {t("login.backHome")}
           </Link>
         </form>
 
         <details className="mt-4 rounded-xl border border-indigo-400/25 bg-white/5 p-3 text-sm text-slate-200">
           <summary className="flex cursor-pointer items-center justify-between text-sm font-semibold text-white">
-            Pas encore de compte ?
+            {t("login.noAccount")}
             <span className="text-xs text-slate-300">▼</span>
           </summary>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -247,7 +248,7 @@ function LoginContent() {
               <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-cyan-500/80 text-[10px] font-bold text-slate-950">
                 E
               </span>
-              Créer un compte Élève
+              {t("login.createStudent")}
             </Link>
             {[
               { label: "Professeur", code: "P" },
@@ -258,27 +259,25 @@ function LoginContent() {
                 type="button"
                 aria-disabled
                 className="inline-flex items-center gap-2 cursor-not-allowed rounded-full border border-dashed border-white/15 bg-white/5 px-3 py-2 text-xs font-semibold text-slate-200 transition hover:border-white/25"
-                title="Création réservée à l’école (bientôt ouverte)"
+                title={t("login.schoolOnly")}
               >
                 <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/10 text-[10px] font-bold text-white/80">
                   {code}
                 </span>
-                Créer un compte {label}
+                {t("login.createRole", { role: label })}
               </button>
             ))}
           </div>
           <div className="rounded-lg border border-white/10 bg-white/5 p-3 text-xs text-slate-200">
             <div className="flex items-center justify-between font-semibold text-white">
-              <span>Freemium vs Premium</span>
+              <span>{t("login.plansTitle")}</span>
             </div>
             <div className="mt-2 space-y-2">
               <p>
-                Freemium : accès de base (positions vues, modules ouverts).
-                Premium : base complète des positions + explications et mini-jeu renforcé.
+                {t("login.plansDescription")}
               </p>
               <p>
-                Aujourd’hui, la création en self-serve est ouverte pour les élèves. Les comptes
-                Prof/Admin sont encore provisionnés par l’école.
+                {t("login.provisioningHint")}
               </p>
             </div>
           </div>
@@ -294,7 +293,7 @@ export default function LoginPage() {
       fallback={
         <main className="mx-auto flex min-h-screen max-w-4xl items-center justify-center px-6 py-16">
           <div className="panel w-full max-w-md p-6 text-center text-slate-200">
-            Chargement du formulaire…
+            {t("login.loadingForm")}
           </div>
         </main>
       }

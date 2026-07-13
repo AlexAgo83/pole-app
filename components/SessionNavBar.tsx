@@ -3,6 +3,7 @@ import { getServerSession, type Session } from "next-auth";
 
 import { authOptions } from "@/lib/auth";
 import { defaultHomeForRole } from "@/lib/rbac";
+import { t } from "@/lib/i18n";
 import { SignOutButton } from "./auth/SignOutButton";
 
 type Props = {
@@ -33,7 +34,7 @@ export async function SessionNavBar({ session, className }: Props) {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/house.svg" alt="" className="h-4 w-4" />
-                Mon espace
+                {t("common.mySpace")}
               </Link>
               <SignOutButton />
             </>
@@ -43,7 +44,7 @@ export async function SessionNavBar({ session, className }: Props) {
             role="button"
             className="rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 px-4 py-2 font-semibold text-slate-900 shadow-lg transition hover:brightness-110"
           >
-            Se connecter
+            {t("common.signIn")}
           </Link>
         )}
       </div>

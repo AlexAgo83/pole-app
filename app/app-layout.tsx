@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth";
 import { FoxPageHeader } from "@/components/FoxPageHeader";
 import { authOptions } from "@/lib/auth";
 import { defaultHomeForRole } from "@/lib/rbac";
+import { t } from "@/lib/i18n";
 
 export default async function AppLayout({
   children,
@@ -13,30 +14,30 @@ export default async function AppLayout({
   const session = await getServerSession(authOptions);
   const roleTitle =
     session?.user?.role === "SCHOOL_ADMIN"
-      ? "Dashboard admin"
+      ? t("common.adminDashboard")
       : session?.user?.role === "TEACHER"
-        ? "Espace prof"
+        ? t("common.teacherSpace")
         : session?.user
-          ? "Espace élève"
-          : "Espace";
+          ? t("common.studentSpace")
+          : t("common.space");
   const teacherShortcuts =
     session?.user?.role === "TEACHER"
       ? [
-          { label: "Planning", href: "/teacher/courses/agenda?view=month" },
-          { label: "Positions", href: "/teacher/positions" },
+          { label: t("common.schedule"), href: "/teacher/courses/agenda?view=month" },
+          { label: t("common.positions"), href: "/teacher/positions" },
         ]
       : [];
   const headerButtons = session?.user
     ? [
         ...teacherShortcuts,
         {
-          label: "Mon espace",
+          label: t("common.mySpace"),
           href: defaultHomeForRole(session.user.role),
           icon: <Image src="/house.svg" alt="" className="h-4 w-4" width={16} height={16} priority />,
         },
-        { label: "Déconnexion", href: "/api/auth/signout" },
+        { label: t("common.signOut"), href: "/api/auth/signout" },
       ]
-    : [{ label: "Se connecter", href: "/login", variant: "primary" as const }];
+    : [{ label: t("common.signIn"), href: "/login", variant: "primary" as const }];
 
   return (
     <main className="mx-auto flex min-h-screen max-w-6xl flex-col gap-6 px-2 pt-0 pb-2 md:px-8 md:pt-0 md:pb-4">
@@ -44,10 +45,10 @@ export default async function AppLayout({
         title={roleTitle}
         eyebrow={
           session?.user?.role === "SCHOOL_ADMIN"
-            ? "Espace admin"
+            ? t("common.adminSpace")
             : session?.user?.role === "TEACHER"
-              ? "Espace prof"
-              : "Espace élève"
+              ? t("common.teacherSpace")
+              : t("common.studentSpace")
         }
         buttons={headerButtons}
         foxHref="/"

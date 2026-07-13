@@ -1,0 +1,37 @@
+{
+  "common": {
+    "studentSpace": "Espace élève",
+    "teacherSpace": "Espace prof",
+    "adminSpace": "Espace admin",
+    "space": "Espace",
+    "adminDashboard": "Dashboard admin",
+    "schedule": "Planning",
+    "positions": "Positions",
+    "mySpace": "Mon espace",
+    "signOut": "Déconnexion",
+    "signIn": "Se connecter"
+  },
+  "login": {
+    "title": "Connexion",
+    "invalidCredentials": "Email ou mot de passe incorrect.",
+    "demoAccess": "Accès démo (comptes seed)",
+    "demoHint": "Utilisez les comptes seed pour tester les rôles et l’accès protégé.",
+    "email": "Email",
+    "password": "Mot de passe",
+    "verificationSent": "Email de vérification renvoyé (si le compte existe).",
+    "resendVerification": "Renvoyer l’email de vérification",
+    "signupSuccess": "Compte créé. Vérifie ton email pour activer ton compte.",
+    "connecting": "Connexion...",
+    "forgotPassword": "Mot de passe oublié ? Envoyer un mot de passe temporaire",
+    "temporaryPasswordSent": "Si un compte existe pour cet email, un mot de passe temporaire vient d'être envoyé.",
+    "backHome": "← Retour accueil",
+    "noAccount": "Pas encore de compte ?",
+    "createStudent": "Créer un compte Élève",
+    "createRole": "Créer un compte {role}",
+    "schoolOnly": "Création réservée à l’école (bientôt ouverte)",
+    "plansTitle": "Freemium vs Premium",
+    "plansDescription": "Freemium : accès de base (positions vues, modules ouverts). Premium : base complète des positions + explications et mini-jeu renforcé.",
+    "provisioningHint": "Aujourd’hui, la création en self-serve est ouverte pour les élèves. Les comptes Prof/Admin sont encore provisionnés par l’école.",
+    "loadingForm": "Chargement du formulaire…"
+  }
+}

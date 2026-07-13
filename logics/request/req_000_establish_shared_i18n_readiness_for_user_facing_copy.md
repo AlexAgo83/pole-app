@@ -1,9 +1,9 @@
 ## req_000_establish_shared_i18n_readiness_for_user_facing_copy - Establish shared i18n readiness for user facing copy
 > From version: 0.15.3
 > Schema version: 1.0
-> Status: Draft
+> Status: Done
 > Understanding: 100
-> Confidence: 90
+> Confidence: 99
 > Complexity: Medium
 > Theme: Internationalization readiness
 > Reminder: Update status/understanding/confidence and linked backlog/task references when you edit this doc.
@@ -73,3 +73,4 @@
 
 # Backlog
 - none
+- `item_001_establish_shared_i18n_readiness_for_user_facing_copy`
