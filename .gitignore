@@ -47,3 +47,5 @@ dump/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+AGENTS.md
+LOGICS.md
