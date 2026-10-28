@@ -49,3 +49,4 @@ dump/
 next-env.d.ts
 AGENTS.md
 LOGICS.md
+logics/.cache/
