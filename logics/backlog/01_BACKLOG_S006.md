@@ -1,4 +1,5 @@
 # Backlog — Retours QA S006 (session 2025-12-21 23:55)
+> Status: Obsolete
 [Compréhension: 95% / Avancement: 72% / Obsolete: 45%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -54,3 +55,7 @@ Source : 06_QA_S006.md (tests sur v0.5.0)
 ## Références croisées
 - Générateur (force blessure, pondération cœurs) : voir S004/S005 pour les règles.
 - Facturation TVA/TVA par défaut 20% : voir S008/S009 si global.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

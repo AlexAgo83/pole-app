@@ -1,4 +1,5 @@
 # Backlog — Retours QA S013 (06_QA_S013.md)
+> Status: Obsolete
 [Compréhension: 100% / Confiance: 90% | Avancement: 87% (P0 en cours de validation) / Obsolete: 10%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -123,3 +124,7 @@
 - Vérifier absence de data sensible dans l’URL.
 ### Progression
 - [x] DONE (bouton partage natif/copie, lien sans `from`)
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

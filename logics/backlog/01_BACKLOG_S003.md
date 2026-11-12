@@ -1,4 +1,5 @@
 # Backlog — Programme “Remise en forme / Débutant·e pole” (notes S003)
+> Status: Obsolete
 [Compréhension: 35% / Avancement: 0% / Obsolete: 100%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -74,3 +75,7 @@ Proposer un programme premium clé-en-main (sport + nutrition) pour débutants/r
 - Unitaires : fonction de génération (sport + nutrition) avec règles, pondération et validation ; règles de filtrage blessures avec badge + option force.
 - Intégration : abonnement → questionnaire → génération → validation (avec/ sans “Forcer quand même”) → sessions visibles dans le planning.
 - QA manuel : alerte “Incompatible avec blessure X” visible pour prof/admin, bouton “Forcer quand même” crée un plan/séance marquée comme forcée ; VOD/maison affichées quand prévues.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

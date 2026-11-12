@@ -1,4 +1,5 @@
 # Backlog — Retours QA S005 (session 2025-12-21 23:55)
+> Status: Obsolete
 [Compréhension: 95% / Avancement: 70% / Obsolete: 45%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -51,3 +52,7 @@ Source: 06_QA_S005.md (tests faits sur v0.5.0)
 ## Références croisées
 - Générateur : voir S004 (pondération cœurs, force blessure, flags appliqué/exclu/forcé).
 - Facturation prof (PDF/email/TVA) et achats crédits/abos : voir S008 pour les règles produit.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

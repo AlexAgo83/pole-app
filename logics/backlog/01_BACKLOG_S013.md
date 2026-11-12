@@ -1,4 +1,5 @@
 # 01_BACKLOG_S013 — Suivi élève, droits profs, transferts crédits, détail pack (QA S014)
+> Status: Obsolete
 [Aligné v0.10.8 | Source: QA S014 & QA S015 | Priorité: à définir / Obsolete: 5%]
 [Compréhension: 90% | Confiance: 75% | Avancement (±QA): 0% build / 0% QA]
 > Quand une tâche est terminée la passer en **(DONE)**
@@ -45,3 +46,7 @@ Traiter les retours QA S014 : enrichir la fiche élève, gérer disciplines mult
 - Priorisation des modules (stats/notes vs transferts vs pack) pour découper les livraisons.
 - Règles exactes de visibilité/renommage de l’historique d’achats pour inclure les transferts.
 - Format des chapitres pack (texte simple vs structure) et stockage (DB ou Cloudinary metadata).
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

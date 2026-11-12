@@ -1,4 +1,5 @@
 # Backlog — Retours QA S010 (session 2025-12-25 11:48 "06_QA_S010" & "06_QA_S011")
+> Status: Obsolete
 [Compréhension: 95% / Confiance: 85% / Avancement: 90% / Obsolete: 20%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -63,4 +64,8 @@
 - QA effectuée sur version 0.7.9 (seed musclée : 30 positions, cours répartis, favoris prof, Amazon partenaire, achats pack/abo seed). Voir 06_QA_S011 pour nouveaux retours.  
 - Super-admin “forcer discipline” : confirmation “FORCE” + scope école recommandé, prévoir dry-run/compteur avant exécution, écoles archivées exclues.  
 - Voir 07_QE_S010.md pour questions complémentaires (actuellement vide).  
-- Rappel : préférer actions in-app (pas de commande Render côté user). 
+- Rappel : préférer actions in-app (pas de commande Render côté user).
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

@@ -1,4 +1,5 @@
 # Backlog — Retours QA S012 (06_QA_S012.md)
+> Status: Obsolete
 [Compréhension: 100% / Confiance: 90% / Avancement: 85% / Obsolete: 15%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -57,3 +58,7 @@
 - F4: Dalle premium non autorisée → redirection vers une page premium dédiée (ex: `/app/student/premium` ou `/app/student/credits?from=catalogue`) pour revenir après achat.
 - F5: Action « Annuler et rembourser » sur achats packs/abos : statut → refunded, rollback crédits ou abo inactif, log interne (motif/opérateur/date), modale de confirmation + motif recommandée.
 - F6: Statuts financiers manuels « Payé » / « En retard » appliqués sur factures et achats (packs/abos), pas sur les cours ; édition prof/admin, persistance DB, affichage clair.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

@@ -1,4 +1,5 @@
 # Backlog Mapbox (affichage studios/partenaires)
+> Status: Obsolete
 [Compréhension: 25% / Confiance: 40% / Avancement: 0% / Obsolete: 100%]
 > OBSOLÈTE / NE PAS FAIRE
 > Quand une tâche est terminée la passer en **(DONE)**
@@ -55,3 +56,7 @@
 - Ajouter `mapbox-gl`/`react-map-gl` au `package.json`.
 - Mettre à jour la doc Render (vars env).
 - Vérifier `npm run build` (import CSS mapbox global, gestion SSR vs client).
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

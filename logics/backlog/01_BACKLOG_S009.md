@@ -1,4 +1,5 @@
 # Backlog — Retours QA S009 (session 2025-12-23 02:13)
+> Status: Obsolete
 [Compréhension: 100% / Confiance: 85% / Avancement: 85% / Obsolete: 25%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -30,3 +31,7 @@
 ## Tests / QA
 - QA Super Admin : création école, assignation admin, visibilité des réglages abonnements/packs, RBAC (invisible aux autres rôles).
 - QA Prof : création/édition positions par le prof, blocage sur positions d’autrui, badge propriétaire visible.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

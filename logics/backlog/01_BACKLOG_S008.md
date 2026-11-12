@@ -1,4 +1,5 @@
 # Backlog — Retours QA S008 (session 2025-12-22 23:14)
+> Status: Obsolete
 [Compréhension: 95% / Confiance: 85% / Avancement: 85% / Obsolete: 30%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -42,3 +43,7 @@
 - Générateur et pondération (cœurs/exclu/force) : cf. S004/S005.
 - Facturation TVA 20%, achats crédits/abos, factures prof PDF/email : cf. S008 (présent) + S009 (config globale super-admin).
 - Partenaires métriques UI : cf. S006.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.
