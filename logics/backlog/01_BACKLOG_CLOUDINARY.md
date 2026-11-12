@@ -1,4 +1,5 @@
 # Backlog Cloudinary (uploads médias)
+> Status: Obsolete
 [Compréhension: 90% / Confiance: 85% / Avancement: 80% / Obsolete: 10%]
 > FAIBLE PRIORITE
 > Quand une tâche est terminée la passer en **(DONE)**
@@ -68,3 +69,7 @@
 - Seed : chaque position reçoit une vidéo Cloudinary authenticated (pool fixe). Écoles/Studios/Cours/Presets seedés avec publicId Cloudinary.
 - Avatars utilisateurs : upload/suppression + fallback seed en place, validations taille/format activées.
 - Reste à faire : nettoyage automatisé lors des suppressions d’entités (prisma hooks/queues) et monitoring/quota Cloudinary.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

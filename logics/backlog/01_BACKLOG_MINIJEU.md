@@ -1,4 +1,6 @@
 # Backlog — Mini-jeux (session 2025-12-21)
+> Status: Done
+> Progress: 100%
 [Compréhension: 100% / Avancement: 80% / Obsolete: 20%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -31,3 +33,7 @@
 - Leaderboard (par mode) affiche au moins une ligne après une session jouée ; pas d’erreur Prisma en prod/dev. Historique 5 dernières sessions visible dans la fiche élève (vue prof/admin).
 - Accessibilité : boutons/feedback clavier, texte clair des réponses. Cartes de modes avec CTA “Jouer” et stats. Bouton “Rejouer ce mode” en fin de session. Affichage des bonnes réponses.
 - Aucune duplication du mode existant (Photo→Nom).
+
+## Operator cleanup — 2026-11-12
+- Delivered: six game modes, session persistence and leaderboards exist in app/student/game and app/api/game/session (git 7e83ed4, 78b8249).
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

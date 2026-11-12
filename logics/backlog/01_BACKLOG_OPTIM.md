@@ -1,4 +1,5 @@
 # Backlog — Optimisations navigation/rendus
+> Status: Obsolete
 [Compréhension: 80% / Confiance: 70% / Avancement: 0% / Obsolete: 10%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -24,3 +25,7 @@ Réduire les re-render complets et accélérer la navigation (moins de requêtes
 - Navigation manuelle sur 3 parcours : affichage instantané sur retour arrière ou navigation inter-pages (positions, cours, studios).
 - `npm run build` passe ; `npm run lint` sans erreurs.
 - Observation console/devtools : moins de hits Prisma réseau, pas de warning cache.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

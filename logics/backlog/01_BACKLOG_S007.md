@@ -1,4 +1,6 @@
 # Backlog — Retours QA S007 (session 2025-12-21 23:55)
+> Status: Done
+> Progress: 100%
 [Compréhension: 100% / Confiance: 90% / Avancement: 100% / Obsolete: 35%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -35,3 +37,7 @@ Source : 06_QA_S007.md (tests sur v0.5.0)
 - QA légende : états cliquables/mémorisés, badge “Filtres actifs” présent.
 - QA achats simulés : crédits/abo ajoutés, reçu affiché, eligibility appliquée.
 - QA vidéos premium : premium voit les liens, non-premium voit verrou.
+
+## Operator cleanup — 2026-11-12
+- Delivered: student month/week agendas, booking legend, purchase receipts and shared games remain implemented (git 78b8249, 431e012, 8e7dfd4).
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

@@ -1,4 +1,6 @@
 # Step 9 — Discovery QA (terminée) — v0.4.4 baseline (release v0.4.6)
+> Status: Done
+> Progress: 100%
 [Compréhension: 100% / Avancement: 100% / Obsolete: 70%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -52,3 +54,7 @@ Objectif : traiter le lot de retours QA pour stabiliser la V0.4.4 (navigation, 
 - Profil : salutation priorise prénom>nom>email, édition prénom/nom prise en compte, module Profil sur la home.
 - Aucun warning `searchParams`/`params` sync dans la console Next/Turbopack.
 - Bonus Step 9 livrés : durée de cours (min 30, pas 15), crédits élèves (premium = 1000), gating premium positions, agenda semaine (durées proportionnelles), studios avec liens Maps et autocomplete mock, seed réaliste (noms, studios, crédits).
+
+## Operator cleanup — 2026-11-12
+- Delivered: Step 9 baseline navigation, pagination, async route parameters and role-specific views remain in the code (git ed633df and subsequent QA fixes).
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

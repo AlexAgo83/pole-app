@@ -1,4 +1,5 @@
 # Backlog — Retours QA S002 (session 2025-12-21 01:00)
+> Status: Obsolete
 [Compréhension: 92% / Avancement: 75% / Obsolete: 60%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -107,3 +108,7 @@
 
 ## Clarifications nécessaires
 - Aucune ouverte pour l’instant (palette/gating/CTA/studios cadrés).
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

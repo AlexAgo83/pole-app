@@ -1,4 +1,5 @@
 # 01 — Backlog Produit (v0.6.10 → produit complet)
+> Status: Obsolete
 [Compréhension: 92% / Avancement: 82% / Obsolete: 50%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -207,3 +208,7 @@ Voir le plan détaillé: `01_BACKLOG_S001.md`. Statut: terminé (durée cours + 
 **Livrables**
 - Bouton “Générer un cours” (prof).
 - Sortie: liste de positions + logique expliquée (transparence).
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.

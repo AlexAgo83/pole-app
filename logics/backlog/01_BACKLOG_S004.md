@@ -1,4 +1,5 @@
 # Backlog — Générateur de cours (notes S004)
+> Status: Obsolete
 [Compréhension: 90% / Avancement: 45% / Obsolete: 100%]
 > Quand une tâche est terminée la passer en **(DONE)**
 > Pensez à mettre à jour les autres fichiers .md
@@ -76,3 +77,7 @@ Automatiser la construction d’un cours en tenant compte du niveau réel des é
 - Unitaires : fonction de sélection (pondération cœur > rareté/recence, exclusion blessures, mix découverte/révision/safe), calcul du flag “forcé”.
 - Intégration : génération → validation (avec/ sans “Forcer quand même”) → persistance sur le cours → retrait d’une position appliquée ; flags appliqué/exclu/forcé visibles en édition.
 - QA : badge cœur, badge “Exclu blessure” + message et justification courte visibles ; régénération propose un set différent si possible ; positions appliquées ne réapparaissent pas dans les suggestions du même cours.
+
+## Operator cleanup — 2026-11-12
+- Not planned, operator cleanup 2026-11-12
+- Legacy scope and progress notes above are historical; this document has no planned follow-up.
